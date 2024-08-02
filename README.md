@@ -2,6 +2,9 @@
 
 Welcome to the Greenwood International High School website! This is a React-based web application designed to provide comprehensive information about the school, including details on admissions, academics, faculty, students, gallery, and contact information.
 
+
+## Go Live : https://greenwood-school-project.netlify.app/
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
