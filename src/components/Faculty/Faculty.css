@@ -1,0 +1,88 @@
+/* Faculty.css */
+.faculty {
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #222121, #f39696);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.faculty h1 {
+  font-size: 3.5em;
+  color: #9552ec;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  position: relative;
+}
+
+.faculty h1::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: #bb55f7;
+  margin: 10px auto;
+  border-radius: 2px;
+  animation: grow 1s ease-in-out;
+}
+
+.faculty ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.faculty li {
+  background: #b6a0e9;
+  color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  font-weight: 400;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+  animation: slideIn 1s ease-in-out;
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 350px;
+}
+
+.faculty li:hover {
+  transform: translateY(-10px);
+  background-color: #65349c;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 120px;
+  }
+}

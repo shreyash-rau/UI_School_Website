@@ -1,0 +1,108 @@
+/* for Students.css */
+
+
+.students {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #868585, #ffffff);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.students h1 {
+  font-size: 3.5em;
+  color: #49031d;
+  margin-bottom: 20px;
+  position: relative;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.students h1::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 6px;
+  background: #f5c9db;
+  margin: 10px auto;
+  border-radius: 2px;
+  animation: underlineAnimation 1s ease-out;
+}
+
+.students h2 {
+  color: #c2185b;
+  font-size: 2.5em;
+  margin-top: 40px;
+  animation: fadeInUp 2s ease-out;
+}
+
+.students p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 2s ease-out;
+}
+
+.students ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.students li {
+  background: #f7679c;
+  color: #910c0c;
+  padding: 15px;
+  margin: 10px 0;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(10px);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  animation: bounceIn 1s ease-out;
+}
+
+.students li:hover {
+  transform: translateY(-5px);
+  background-color: #ebb3c9;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(30px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) translateY(-15px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes underlineAnimation {
+  from {
+    width: 0;
+    background-color: transparent;
+  }
+  to {
+    width: 120px;
+    background-color: #c2185b;
+  }
+}

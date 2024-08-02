@@ -1,0 +1,87 @@
+/* Home.css */
+
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: #d3def5;
+  color: #333;
+  /* border-radius: -10px -10px -10px -10px; */
+}
+
+.home h1 {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.home p {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.carousel-item img {
+  height: 65vh;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 5px 0 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

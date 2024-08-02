@@ -1,0 +1,98 @@
+/* AboutUs.css */
+.about-us {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #b2eaf1, #f0d7d7);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.about-us h1 {
+  font-size: 3.5em;
+  color: #042a42;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  position: relative;
+}
+
+.about-us h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #024ea0;
+  margin: 10px auto;
+  border-radius: 2px;
+  animation: grow 1s ease-in-out;
+}
+
+.about-us h2 {
+  color: #007bff;
+  font-size: 2.5em;
+  margin-top: 40px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-us p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-us ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-us li {
+  background: #97bfeb;
+  color: #251d1d;
+  padding: 15px;
+  font-weight:bold;
+  margin: 10px 0;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+  animation: slideIn 1s ease-in-out;
+}
+
+.about-us li:hover {
+  transform: translateY(-5px);
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100px;
+  }
+}

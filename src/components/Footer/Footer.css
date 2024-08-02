@@ -1,0 +1,36 @@
+/* Footer.css */
+footer {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: #0277bd;
+  padding: 20px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+footer .text-center {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+footer .p-3 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+footer a {
+  color: #0277bd;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #01579b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer .text-center {
+    font-size: 1em;
+  }
+}

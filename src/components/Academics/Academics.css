@@ -1,0 +1,97 @@
+/* Academics.css */
+.academics {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #706a6c, #e9b4f1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.academics h1 {
+  font-size: 3.5em;
+  color: #2c151e;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  position: relative;
+}
+
+.academics h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #e00958;
+  margin: 10px auto;
+  border-radius: 2px;
+  animation: grow 1s ease-in-out;
+}
+
+.academics h2 {
+  color: #80183e;
+  font-size: 2.5em;
+  margin-top: 40px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.academics p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.academics ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.academics li {
+  background: #d81b60;
+  color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+  animation: slideIn 1s ease-in-out;
+}
+
+.academics li:hover {
+  transform: translateY(-5px);
+  background-color: #c2185b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100px;
+  }
+}
